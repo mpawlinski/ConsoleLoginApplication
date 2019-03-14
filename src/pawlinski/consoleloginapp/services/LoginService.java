@@ -40,12 +40,6 @@ public class LoginService {
 
     public boolean checkIfUserExistsAndLog(String username, String password) {
 
-        System.out.println("\nchecking users:");
-        for(User user : UserRepository.getInstance().getUserList()) {
-            System.out.println(user);
-        }
-
-
         for(User user : UserRepository.getInstance().getUserList()) {
             if((username.equals(user.getUsername())) && (password.equals(user.getPassword()))) {
                 loggedUser = user;

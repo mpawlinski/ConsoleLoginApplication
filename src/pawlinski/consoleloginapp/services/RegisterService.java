@@ -67,11 +67,6 @@ public class RegisterService {
 
         UserRepository.getInstance().getUserList().add(newUser);
 
-        System.out.println("++++++++USERS: ");
-        for(User user : UserRepository.getInstance().getUserList()) {
-            System.out.println(user);
-        }
-
         System.out.println("\nAccount successfully created!\n" +
                 "Username: " + newUser.getUsername() + "\n" +
                 "Password: " + newUser.getPassword() + "\n" +
